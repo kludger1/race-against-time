@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.instruction {
+    position: absolute;
+    top: 18%;
+    left: 20%;
+    width: 60%;
+    height: auto;
+    z-index: 100;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 7px;
+}
+
+.reset-btn {
+font-size: 16px;
+cursor: pointer;
+}
+
+.reset-btn:hover {
+    color: rgb(67,68,68);
+}
+
+.road {
+    background: url(../images/road.png) repeat-x;
+    position: absolute;
+    width: 1800px;
+    height: 100%;
+    animation:  clouds 6s linear infinite;
+}
+
+.finish-line-img {
+    position: absolute;
+    right: -446px;
+    top: 289px;
+    z-index: 10;
+    transform: rotate(90deg);
+    height: 164px;
+    width: 694px;
+    border-bottom: 2px solid #000;
+    visibility: hidden;
+    transition: linear;
+    transition-duration: 3s;
+}
+
+.result, .rsg {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 150px;
+    font-family: 'Press Start 2P', cursive;
+    z-index: 100;
+    text-transform: uppercase;
+}
+
+.joke {
+    font-size: 50px;
+    margin-bottom: 40px;
+    width: 800px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.timer {
+    font-size: 30px;
+    position: fixed;
+    z-index: 5;
+    font-family: 'Press Start 2P', cursive;
+    padding: 20px;
+}
+
+.hid {
+    display: none;
+}
+
+.crossing-line {
+    position: absolute;
+    right: 140px;
+    top: -2px;
+    z-index: 10;
+    height: 100vh;
+    width: 1px;
+}
+
+.guy {
+    background:  url(../images/guy.png) no-repeat;
+    position: absolute;
+    width: 151px;
+    height: 168px;
+    top: 60%;
+    right:0;
+    bottom: 0;
+    left:0;
+    z-index: 99;
+    transition: top 500ms, left 500ms;
+}
+
+@keyframes clouds {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -2000px 0;
+    }
+}
+
+
